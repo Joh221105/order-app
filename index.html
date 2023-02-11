@@ -8,7 +8,75 @@
     <link rel ="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1> fsajfoa</h1>
+    <header>
+        <div class = header-container>
+            <h1 class = 'main-heading heading'>Jimmy's Diner</h1>
+            <h2 class ='sub-heading heading'>The best <span class ='best'>burgers</span> and <span class ='best'>pizza</span> in town.</h2>
+        </div>
+    </header>
+    <main>
+        <section id = "payment-screen" class = 'hidden'>
+            <h3 class = 'enter-card-info'> Enter Card Details</h3>
+            <form id = 'complete-payment' >
+                <div class = 'payment-box'>
+                    
+                    <input 
+                        type = 'text'
+                        placeholder="Enter Your Name" 
+                        name= "name"
+                        required>
+
+                    <input 
+                        type = 'text'
+                        placeholder="Enter Card Number" 
+                        name ="card-number"
+                        required>
+
+                    <input 
+                        type = 'text'
+                        placeholder="Enter CVV" 
+                        name = "cvv"
+                        required>
+
+                    <button  type="submit">Pay</button>
+                    <button id = "return-to-cart" type="button">Return to Cart</button>
+                </div>
+            </form>
+        </section>
+        <section id = "food-container">
+    
+        </section>
+        <section id = "confirmation-screen" class = 'hidden'>
+            <button id = "exit-confirmation"> X </button>
+        </section>
+
+
+    </main>
+    <footer id = "bill" class = "footer">
+        <div>
+            <h4 class ="your-order">Your Order </h4>
+            <div id = 'order'>
+            </div>
+            <hr>
+            <div class ='total-price-container'>
+                <h5 class='total-price' >Total Price:</h5>
+                <div id="total-amount">
+                
+                </div>
+            </div>
+            <button id = "complete-order">Complete Order</button>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
     <script src ='./app.js' type = 'module'></script>
 </body>
 </html>
